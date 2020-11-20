@@ -1,0 +1,19 @@
+/* global styles including mobile */
+
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;1,600&family=Gugi&display=swap');
+}
+
+nav {
+font-family: "barlow";
+text-transform: uppercase;
+}
+
+body {
+font-family: "Futura", sans-serif;
+}
+
+.logo {
+    max-width: 290px;
+}
