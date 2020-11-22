@@ -5,15 +5,124 @@
     src: url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;1,600&family=Gugi&display=swap');
 }
 
+:root {
+    --white: #fff;
+    --black: #000;
+    --grey: #585048;
+    --red: #f22e76;
+    --purple: #6301f7;
+    --blueish:  #48f5e8;
+    --yellow: #ffee3f;
+    --pink: #f6a3ee;
+}
+
+/* ----- layout ----- */
+
+.main {
+    margin: 10px;
+    text-align: center;
+}
+
+p {
+    text-align:  left;
+    padding-bottom: 10px;
+}
+
+/* ----- typography ----- */
+
+h1, h2, h3, .btn, .btn-main {
+    font-family: barlow;
+    text-transform: uppercase;
+}
+
+.h1-main, .h2-main {
+    color: white;
+    text-align:  center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 22px;
+}
+
 nav {
-font-family: "barlow";
-text-transform: uppercase;
+    font-family: "barlow";
+    text-transform: uppercase;
 }
 
 body {
-font-family: "Futura", sans-serif;
+    margin: 0 auto;
+    font-family: "Futura", sans-serif;
 }
 
+/* ----- header ----- */
+
 .logo {
-    max-width: 290px;
+    width: 100%;
+    max-width: 250px;
+}
+
+header {
+    margin: 10px;
+    background-color: white;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 20px;
+}
+
+.header-home {
+    box-sizing: border-box;
+    background-image: url(/images/header-mobile.jpg);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ----- navigation ----- */
+
+nav li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+nav, #hamburger  {
+    display: none;
+}
+
+#hamburger:checked ~ nav {
+    display: block;
+    text-align: center;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/* ----- images and buttons ----- */
+
+a.btn-main, .btn {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--red);
+    font-size: 1rem;
+    padding: 0.6rem 4rem;
+}
+
+.cta-box {
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+    font-family: "barlow";
+    text-transform: uppercase;
+    background: url(/images/squares-1.png);
+}
+
+
+
+nav li:hover {
+    color: var(--red);
 }
