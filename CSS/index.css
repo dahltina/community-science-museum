@@ -64,13 +64,17 @@ body {
 .logo {
     width: 100%;
     max-width: 250px;
+    padding: 10px;
+}
+
+.fa-bars {
+    margin-top: 10px;
 }
 
 header {
     position: fixed;
     width: 100%;
     margin: 0px;
-    padding: 10px;
     background-color: white;
     z-index: 10;
     display: grid;
@@ -81,17 +85,32 @@ header {
     position: relative;
     top: 50px;
     box-sizing: border-box;
-    background-image: url(/images/header-mobile.jpg);
+    background-image: url(/images/header-1920.jpg);
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
+.header-line {
+    background: no-repeat url(/images/header-line.jpg);
+    width: 100%;
+    height: 8px;
+    z-index: 9;
+    grid-column: 1 / 3;
+    position: absolute;
+    top: 45px;
+}
+
 /* ----- navigation ----- */
+
+nav {
+    grid-column: 1 / 3;
+    height: 100vh;
+}
 
 nav li {
     list-style-type: none;
-    padding: 30px;
+    padding: 30px; 
 }
 
 nav, #hamburger  {
@@ -122,6 +141,7 @@ a.btn-main, .btn {
 
 .cta-box {
     display: flex;
+    justify-content: center;
     width: 100%;
     font-family: "barlow";
     text-transform: uppercase;
@@ -209,7 +229,7 @@ input[type="submit"] {
     font-family: "barlow";
     font-weight: 700;
     font-size: 1rem;
-      }
+}
 
 
 nav li:hover {
