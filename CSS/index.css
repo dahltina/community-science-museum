@@ -35,9 +35,9 @@ h1, h2, h3, .btn, .btn-main {
     text-transform: uppercase;
 }
 
-.h1-main, .h2-main {
+.h1-main, .h2-main, .h3-main {
     color: white;
-    text-align:  center;
+    text-align: center;
 }
 
 h1 {
@@ -46,6 +46,7 @@ h1 {
 
 h2 {
     font-size: 22px;
+    text-align: center;
 }
 
 nav {
@@ -112,17 +113,105 @@ a.btn-main, .btn {
     padding: 0.6rem 4rem;
 }
 
+/* ----- main content ----- */
+
 .cta-box {
+    display: flex;
     width: 100%;
-    min-width: 100px;
-    min-height: 100px;
     font-family: "barlow";
     text-transform: uppercase;
-    background: url(/images/squares-1.png);
+    background: no-repeat url(/images/squares-1.png);
+    background-size: contain;
+    max-width: 378px;
+    height: 378px;
+    margin: 10px auto;
+    resize: both;
+    text-align: center;
+    margin-top: 5%;
 }
 
+.two {
+    background: no-repeat url(/images/young-stars.jpg);
+    background-size: 100% auto;
+}
+
+.three {
+    background: no-repeat url(/images/exhibitions-illustration.svg);
+    background-size: 100% auto;
+}
+
+.four {
+    background: no-repeat url(/images/squares-3.png);
+    background-size: 100% auto;
+}
+
+.five {
+    background: no-repeat url(/images/ai.jpg);
+    background-size: 100% auto;
+}
+.six {
+    background: no-repeat url(/images/squares-2.png);
+    background-size: 100% auto;
+}
+
+.seven {
+    background: no-repeat url(/images/biology.jpg);
+    background-size: 100% auto;
+}
+
+.h3-main {
+    align-self: flex-end;
+}
+
+/* ---- footer ----- */
+
+footer {
+    margin: 50px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+footer h4 {
+    font-family: "barlow";
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.footer-newsletter {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+footer a {
+    display: block;
+    color: var(--red);
+}
+
+input {
+    width: 100%;
+    min-height: 30px;
+}
+
+input[type="submit"] {
+    text-decoration: none;
+    background: var(--red);
+    color: var(--white);
+    padding: 0.6rem 3rem;
+    border: 0;
+    text-transform: uppercase;
+    font-family: "barlow";
+    font-weight: 700;
+    font-size: 1rem;
+      }
 
 
 nav li:hover {
     color: var(--red);
 }
+
