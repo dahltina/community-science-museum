@@ -67,14 +67,19 @@ body {
 }
 
 header {
-    margin: 10px;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
     background-color: white;
     z-index: 10;
     display: grid;
-    grid-template-columns: 1fr 20px;
+    grid-template-columns: 1fr 35px;
 }
 
 .header-home {
+    position: relative;
+    top: 50px;
     box-sizing: border-box;
     background-image: url(/images/header-mobile.jpg);
     margin: 0 auto;
@@ -157,10 +162,6 @@ a.btn-main, .btn {
 .seven {
     background: no-repeat url(/images/biology.jpg);
     background-size: 100% auto;
-}
-
-.h3-main {
-    align-self: flex-end;
 }
 
 /* ---- footer ----- */
