@@ -26,18 +26,18 @@
 }
 
 p {
-    text-align:  left;
+    text-align: left;
     padding-bottom: 10px;
 }
 
 /* ----- typography ----- */
 
-h1, h2, h3, .btn, .btn-main {
-    font-family: barlow;
+h1, h2, h3, h4, .btn, .btn-main {
+    font-family: "barlow", sans-serif;
     text-transform: uppercase;
 }
 
-.h1-main, .h2-main, .h3-main {
+.h1-main, .h2-main, .h3-main, .h4-main {
     color: white;
     text-align: center;
 }
@@ -145,8 +145,6 @@ a.btn-main, .btn {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-family: "barlow";
-    text-transform: uppercase;
     background: no-repeat url(/images/squares-1.png);
     background-size: contain;
     max-width: 378px;
@@ -163,7 +161,7 @@ a.btn-main, .btn {
 }
 
 .three {
-    background: no-repeat url(/images/exhibitions-illustration.svg);
+    background: no-repeat url(/images/exhibitions-illustration.png);
     background-size: 100% auto;
 }
 
@@ -188,6 +186,13 @@ a.btn-main, .btn {
 
 /* ---- footer ----- */
 
+.footer-line {
+    margin-top: 100px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey);
+}
+
 footer {
     margin: 50px 10px 10px 10px;
     display: grid;
@@ -199,6 +204,10 @@ footer {
 footer p {
     font-size: 14px;
     margin: 0px;
+}
+
+footer a {
+    margin-bottom: 8px;
 }
 
 footer h4 {
@@ -231,12 +240,13 @@ input[type="submit"] {
     font-family: "barlow";
     font-weight: 700;
     font-size: 1rem;
+    margin-top: 10px;
 }
 
 
 /* tablets */
 
-@media (min-width: 500px) and (max-width: 814px) {
+@media (min-width: 500px) and (max-width: 900px) {
     .main {
         display: grid;
         justify-items: center;
@@ -252,16 +262,83 @@ input[type="submit"] {
     .one {
         grid-column: 1 / 3;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
+
+
 /* laptops and desktop */
 
-@media (min-width: 815px) {
+@media (min-width: 901px) {
+
+    /* layout */
+    .main {
+        margin: 5% 10% 10% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .cta-box {
+    }
+
+    .one {grid-area: 1 / 3 / 2 / 5;}
+    .two { grid-area: 1 / 2 / 2 / 3;}
+    .visit {grid-area: 1 / 1 / 2 / 2;}
+    .four {grid-area: 2 / 3 / 3 / 4;}
+    .five {grid-area: 2 / 4 / 3 / 5;}
+    .six {grid-area: 3 / 4 / 4 / 5;}
+    .seven {grid-area: 3 / 3 / 4 / 4;}
+    .exhibitions-box {
+        grid-area: 2 / 1 / 4 / 3;
+    }
+
+    /* header */
+
     .header-home {
         height: 350px;
     }
 
+    /* typography */
+    h1 {
+        font-size: 57px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .h2-main.header  {
+        font-size: 40px;
+    }
+
     nav li:hover {
         color: var(--red);
+    }
+
+    .btn-main:hover, .btn:hover {
+        background-color: var(--white);
+        color: var(--red);
+    }
+
+    /* footer */
+
+    .footer-line {
+        margin-top: 80px;
+    }
+
+    footer {
+        margin: 3% 10% 2% 10%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-gap: 20px;
+    }
+
+    .footer-newsletter {
+        grid-area: 1 / 5 / 2 / 7;
     }
 
 }
