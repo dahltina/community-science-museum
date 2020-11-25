@@ -28,6 +28,7 @@
 p {
     text-align: left;
     padding-bottom: 10px;
+    max-width: 600px;
 }
 
 /* ----- typography ----- */
@@ -46,9 +47,21 @@ h1 {
     font-weight: 900;
 }
 
+.h1-pink {
+    color: var(--pink);
+    text-shadow: -4px 3px black;
+    font-size: 38px;
+}
+
 h2 {
     font-size: 22px;
     text-align: center;
+}
+
+.subheader {
+    text-transform: none;
+    text-align: left;
+    font-style: italic;
 }
 
 nav {
@@ -112,7 +125,7 @@ nav {
 
 nav li {
     list-style-type: none;
-    padding: 30px; 
+    padding: 30px;
 }
 
 nav, #hamburger  {
@@ -122,7 +135,7 @@ nav, #hamburger  {
 #hamburger:checked ~ nav {
     display: block;
     text-align: center;
-  }
+}
 
 a {
     text-decoration: none;
@@ -130,6 +143,10 @@ a {
   }
 
 /* ----- images and buttons ----- */
+
+img {
+    width: 100%;
+}
 
 a.btn-main, .btn {
     text-decoration: none;
@@ -243,15 +260,131 @@ input[type="submit"] {
     margin-top: 10px;
 }
 
+/* ----- visit us page ----- */
+
+.header-visit {
+    top: 0px;
+}
+
+.h2-visit {
+    text-align: left;
+}
+
+.h3-other {
+    text-align: left;
+}
+
+/* ----- events page ----- */
+
+.main-events {
+ margin-top: 80px;
+}
+
+.schedule-section, .section {
+    margin: 10px;
+}
+
+.section {
+    margin-top: 70px;
+}
+
+.section-two {
+    background-color: var(--pink);
+    padding: 50px 10px 50px 10px;
+    margin-top: 70px;
+}
+
+.section-night {
+    padding: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
+}
+
+.more-events {
+    background-color: var(--purple);
+    padding: 10px;
+}
+
+.more-events h2, .more-events h3 {
+    color: var(--blueish);
+    font-size: 40px;
+    text-shadow: -5px 5px black;
+    text-align: center;
+}
+
+.energetica {
+    padding: 10px;
+    margin: 30px 0px 30px 0px;
+}
+
+.more-events h3 {
+    font-size: 28px;
+}
+
+
+/* ----- exhibitions page ----- */
+
+.section-two.yellow {
+    background-color: var(--yellow);
+}
+
+.ai-pic {
+    display: none;
+}
+/*
+.box {
+    background: no-repeat url(/images/space-illustration-7.svg);
+    width: 100%;
+    height: 115px;
+    position: absolute;
+}
+
+.box.two {
+    background: no-repeat url(/images/space-illustration-6.svg);
+}
+*/
+.boxes {
+    background: no-repeat url(/images/space-illustration-5.svg);
+    width: 100%;
+    height: 150px;
+}
+/* ----- contact page ----- */
+
+.main.contact {
+    text-align: left;
+}
+
+form label {
+    color: var(--gray);
+    font-size: 0.8rem;
+  }
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+  }
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--red);
+  border: none;
+}
+
+/* ----- young stars page ----- */
+.young-stars-illustration {
+    background: no-repeat url(/images/young-stars-illustration.svg);
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+}
 
 /* tablets */
 
-@media (min-width: 500px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 1100px) {
     .main {
         display: grid;
         justify-items: center;
         grid-gap: 20px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
 
@@ -259,8 +392,12 @@ input[type="submit"] {
         margin: 0px;
     }
 
-    .one {
-        grid-column: 1 / 3;
+    .one {grid-column: 1 / 4;}
+    .four {grid-area: 2 / 3 / 3 / 4;}
+
+    .exhibitions-box {
+        grid-column: 1 / 4;
+        max-width: 800px;
     }
 
     footer {
@@ -272,18 +409,15 @@ input[type="submit"] {
 
 /* laptops and desktop */
 
-@media (min-width: 901px) {
+@media (min-width: 1101px) {
 
     /* layout */
     .main {
-        margin: 5% 10% 10% 10%;
+        margin: 0% 10% 10% 10%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 30px;
-    }
-
-    .cta-box {
     }
 
     .one {grid-area: 1 / 3 / 2 / 5;}
@@ -293,14 +427,47 @@ input[type="submit"] {
     .five {grid-area: 2 / 4 / 3 / 5;}
     .six {grid-area: 3 / 4 / 4 / 5;}
     .seven {grid-area: 3 / 3 / 4 / 4;}
-    .exhibitions-box {
-        grid-area: 2 / 1 / 4 / 3;
-    }
+    .exhibitions-box {grid-area: 2 / 1 / 4 / 3;}
 
     /* header */
+    header {
+        position: inherit;
+        height: 80px;
+        display: grid;
+        grid-template-columns:  500px 1fr;
+    }
+
+    .logo {
+        max-width: 450px;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
 
     .header-home {
+        top: 0px;
         height: 350px;
+    }
+
+    .header-line {
+        top: 75px;
+    }
+
+    /* navigation */
+    nav {
+        display: inline;
+        grid-area: 1 / 2 / 2 / 3;
+        justify-self: end;
+        margin-top: 15px;
+        margin-right: 5%;
+    }
+
+    nav li {
+        padding: 10px;
+        display: inline;
+    }
+
+   #hamburger, .fa-bars {
+        display: none;
     }
 
     /* typography */
@@ -333,15 +500,11 @@ input[type="submit"] {
 
     footer {
         margin: 3% 10% 2% 10%;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
     }
 
     .footer-newsletter {
         grid-area: 1 / 5 / 2 / 7;
     }
-
 }
-
-
-

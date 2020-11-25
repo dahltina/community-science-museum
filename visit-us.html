@@ -10,19 +10,108 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <header>
-            <a href="index.html"><img class="logo" src="images/logo.png" alt="community science museum logo"></a>
-            <label for="hamburger"><i class="fas fa-bars"></i></label> 
-            <input type="checkbox" id="hamburger"> 
-            <nav role="navigation" aria-label="main menu">
-                <ul>
-                    <li><a href="visit-us.html" class="active">visit us</a></li>
-                    <li><a href="exhibitions.html">exhibitions</a></li>
-                    <li><a href="events.html">special events</a></li>
-                    <li><a href="get-involved.html">get involved</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    <li><i class="fas fa-search"></i>search</li>
-                </ul>
-            </nav>
-        </header>
+        <!------- header ------->
+            <header class="header-visit">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="community science museum logo"></a>
+                <label for="hamburger"><i class="fas fa-bars"></i></label> 
+                <input type="checkbox" id="hamburger"> 
+                <nav role="navigation" aria-label="main menu">
+                    <ul>
+                        <li><a href="visit-us.html" class="active">visit us</a></li>
+                        <li><a href="exhibitions.html">exhibitions</a></li>
+                        <li><a href="events.html">special events</a></li>
+                        <li><a href="get-involved.html">get involved</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><i class="fas fa-search"></i></li>
+                    </ul>
+                </nav>
+                <div class="header-line"></div>
+            </header>
         <main>
+            <!------- main ------->
+            <div class="main">
+                <h1 class="h1-pink">visit us</h1>
+                <img src="images/about.jpg" alt="big, white museum room with pictures on the wall a white and blue toy rocket ship, a pink toy cow, an oversized casette">
+                <div>
+                    <h2 class="h2-visit">community science museum</h2>
+                    <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
+                    <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, 
+                        and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+                    <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries 
+                        and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
+                    <p>We believe science should not be confined to the textbook, but brought to live through exhibits. 
+                        This is why we have over 1000 different exhibits on the many varied subjects of science to explore. 
+                        Many of these exhibits are designed for you to interact with and play around to see science come 
+                        to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
+                </div>
+                <div>
+                    <h2 class="h2-visit">admission & tours</h2>
+                    <p>The entrance is free for all.</p> 
+                    <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person 
+                        and include a handy printed guide of the museum.</p>
+                    <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+                </div>
+                <div>
+                   <h2 class="h2-visit">location</h2>
+                   <p>The museum is located at Monrads Gate at Sofienberg / Tøyen.</p>
+                   <img src="images/map.png" alt="map of location. click to go to google maps">
+                </div>
+                <div>
+                    <h2 class="h2-visit">Accessibility</h2>
+                    <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+                </div>
+                <div>
+                    <h2 class="h2-visit">food & drink</h2>
+                    <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p> 
+                    <p>More info and menu to come.</p>
+                </div>
+                <div>
+                    <h2 class="h2-visit">shop</h2>
+                    <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+                </div>
+            </div>
+        </main>
+                <div class="footer-line"></div>
+                <!------- footer ------->
+                <footer>
+                    <div class="footer-hours">
+                        <h4>Hours</h4>
+                        <p>Monday: Closed</p>
+                        <p>Tuesday: 10:00 - 16:00</p>
+                        <p>Wednesday: 10:00 - 16:00</p>
+                        <p>Thursday: 10:00 - 16:00</p>
+                        <p>Friday: 10:00 - 19:00</p>
+                        <p>Saturday: 09:00 - 16:00</p>
+                        <p>Sunday: 09:00 - 13:00</p>
+                    </div>
+                    <div class="footer-about">
+                        <h4>About</h4>
+                        <a href="visit-us.html">About Us</a>
+                        <a href="visit-us.html">Accessibility</a>
+                        <a href="visit-us.html">Admission and Tours</a>
+                        <a href="visit-us.html">Food and Drink</a>
+                        <a href="get-involved.html">Support Us</a>
+                        <a href="get-involved.html">Volunteer</a>
+                        <a href="get-involved.html">Internships</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>Community Science Museum</p>
+                        <p>Monrads Gate 22</p>
+                        <p>0564 Oslo</p>
+                        <p>Phone Number: 93068864</p>
+                        <a href="contact.html">Contact Form</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>newsletter</h4>
+                        <p>Subscribe to our newsletter for updates on new
+                            exhibitions, events and more</p>
+                        <form action="form-success.php" method="GET">
+                            <input type="text" name="e-mail" id="e-mail">
+                            <input id="submit" type="submit" value="subscribe" />
+                        </form>
+                    </div>
+                </footer>
+            </div>
+    </body>
+</html>
