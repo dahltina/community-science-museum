@@ -135,6 +135,7 @@ nav, #hamburger  {
 #hamburger:checked ~ nav {
     display: block;
     text-align: center;
+    padding-top: 40px;
 }
 
 a {
@@ -321,15 +322,16 @@ input[type="submit"] {
 }
 
 
-/* ----- exhibitions page ----- */
+/* ----- exhibitions & get involved pages ----- */
+
+.h1-get-involved {
+    margin: 10px;
+}
 
 .section-two.yellow {
     background-color: var(--yellow);
 }
 
-.ai-pic {
-    display: none;
-}
 /*
 .box {
     background: no-repeat url(/images/space-illustration-7.svg);
@@ -347,6 +349,14 @@ input[type="submit"] {
     width: 100%;
     height: 150px;
 }
+
+.boxes-one {
+    display: none;
+    background: no-repeat url(/images/space-illustration-1.svg);
+    width: 100%;
+    height: 250px;
+}
+
 /* ----- contact page ----- */
 
 .main.contact {
@@ -470,8 +480,16 @@ textarea:focus {
         display: none;
     }
 
+    .active {
+        color: var(--red);
+    }
+
     /* typography */
     h1 {
+        font-size: 57px;
+    }
+
+    .h1-pink {
         font-size: 57px;
     }
 
@@ -481,6 +499,10 @@ textarea:focus {
 
     .h2-main.header  {
         font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
     }
 
     nav li:hover {
@@ -507,4 +529,42 @@ textarea:focus {
     .footer-newsletter {
         grid-area: 1 / 5 / 2 / 7;
     }
+
+    /* ----- exhibitions & get involved pages ----- */
+
+    .h1-get-involved {
+        padding: 40px 0px 0px 10%;
+    }
+    .main-events {
+        margin: 0;
+    }
+
+    .boxes-one {
+    }
+
+    .section, .section-two {
+        padding: 0px 10% 0px 10%;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .section p, .section-two img {
+        grid-column: 1 / 2;
+    }
+
+    .section-two p, .section img {
+        grid-column: 2 / 3;
+    }
+
+    .section-two {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .get-involved-text {
+        grid-row: 1 / 2;
+    }
+
 }
