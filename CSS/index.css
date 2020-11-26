@@ -18,10 +18,13 @@
 
 /* ----- layout ----- */
 
-.main {
+.main, .main-visit-us {
     position: relative;
     top: 60px;
     margin: 10px;
+}
+
+.main {
     text-align: center;
 }
 
@@ -494,7 +497,7 @@ textarea:focus {
     }
 
     h2 {
-        font-size: 34px;
+        font-size: 24px;
     }
 
     .h2-main.header  {
@@ -566,5 +569,19 @@ textarea:focus {
     .get-involved-text {
         grid-row: 1 / 2;
     }
+
+     /* ----- visit us page ----- */
+
+     .main-visit-us {
+         margin: 0% 10% 10% 10%;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 50px;
+     }
+
+     .visit-us-img {
+         grid-column: 1 / 3;
+     }
+     
 
 }
