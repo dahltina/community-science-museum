@@ -18,6 +18,9 @@
 
 /* ----- layout ----- */
 
+html, body {min-height: 100%;}
+body {background-size: cover;}
+
 .main, .main-visit-us {
     position: relative;
     top: 60px;
@@ -31,7 +34,7 @@
 p {
     text-align: left;
     padding-bottom: 10px;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 /* ----- typography ----- */
@@ -234,7 +237,7 @@ footer a {
 footer h4 {
     font-family: "barlow";
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .footer-newsletter {
@@ -270,11 +273,7 @@ input[type="submit"] {
     top: 0px;
 }
 
-.h2-visit {
-    text-align: left;
-}
-
-.h3-other {
+.h2-visit, .h3-other {
     text-align: left;
 }
 
@@ -323,7 +322,6 @@ input[type="submit"] {
 .more-events h3 {
     font-size: 28px;
 }
-
 
 /* ----- exhibitions & get involved pages ----- */
 
@@ -383,14 +381,6 @@ textarea:focus {
   border: none;
 }
 
-/* ----- young stars page ----- */
-.young-stars-illustration {
-    background: no-repeat url(/images/young-stars-illustration.svg);
-    width: 100%;
-    height: 380px;
-    margin-top: 50px;
-}
-
 /* tablets */
 
 @media (min-width: 600px) and (max-width: 1100px) {
@@ -401,6 +391,18 @@ textarea:focus {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
+
+    /* ----- header ----- */
+
+    .logo {
+        max-width: 300px;
+    }
+
+    .header-line {
+        top: 50px;
+    }
+
+    /* ----- main index ----- */
 
     .cta-box {
         margin: 0px;
@@ -413,6 +415,8 @@ textarea:focus {
         grid-column: 1 / 4;
         max-width: 800px;
     }
+
+    /* ----- footer ----- */
 
     footer {
         display: grid;
@@ -452,6 +456,37 @@ textarea:focus {
         grid-area: 2 / 1 / 3 / 3;
         width: 100%;
     }
+
+    /* ----- young stars page ----- */
+
+    .young-stars {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    .young-stars p {grid-column: 2 / 3;}
+    .young-stars-header {grid-column: 2 / 3;}
+
+    .young-stars-img {
+        grid-area: 1 / 1 / 3 / 2;
+        margin-top: 30px;
+    }
+
+    .young-stars-header h1 {
+        text-align: left;
+    }
+
+    /* ----- opening event page ----- */
+
+    .opening-text {
+        grid-column: 1 / 4;
+    }
+
+    .schedule {
+        grid-column: 1 / 4;
+    }
+
+
 }
 
 
@@ -639,5 +674,44 @@ textarea:focus {
 
     input[type="submit"] {
         margin-top: 20px;
+    }
+
+    /* ----- young stars page ----- */
+
+    .young-stars {
+        text-align: left;
+        display: grid;
+        margin: 0% 10% 10% 10%;
+        grid-gap: 50px;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 200px 1fr;
+    }
+
+    .young-stars-img {
+        grid-area: 1 / 1 / 3 / 2;
+        margin-top: 50px;
+    }
+
+    .young-stars-text {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .young-stars-header {
+        grid-column: 2 / 3;
+    }
+
+    /* ----- grand opening page ----- */
+
+    .opening-text {
+        grid-column: 2 / 4;
+    }
+
+    .schedule {
+        font-size: 16px;
+    }
+
+    .img-squares {
+        background: no-repeat url(/images/squares-4.png);
+        background-size: 100% auto;
     }
 }
