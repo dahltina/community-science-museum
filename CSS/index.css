@@ -171,7 +171,7 @@ a.btn-main, .btn {
     width: 100%;
     background: no-repeat url(/images/squares-1.png);
     background-size: contain;
-    max-width: 378px;
+    max-width: 378px; 
     height: 378px;
     margin: 10px auto;
     resize: both;
@@ -277,7 +277,7 @@ input[type="submit"] {
     text-align: left;
 }
 
-/* ----- events page ----- */
+/* ----- events, exhibitions & get involved layout ----- */
 
 .main-events {
  margin-top: 80px;
@@ -291,6 +291,10 @@ input[type="submit"] {
     margin-top: 70px;
 }
 
+.first {
+    margin-top: 20px;
+}
+
 .section-two {
     background-color: var(--pink);
     padding: 50px 10px 50px 10px;
@@ -300,6 +304,16 @@ input[type="submit"] {
 .section-night {
     padding: 20px 0px 20px 0px;
     margin: 20px 0px 20px 0px;
+}
+
+/* ----- events page ----- */
+
+.img-squares {
+    background: url(/images/squares-4.png);
+    background-size: contain;
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
 }
 
 .more-events {
@@ -426,8 +440,9 @@ textarea:focus {
     /* ----- exhibitions & get involved pages ----- */
 
     .main-events img {
-        max-width: 700px;
+        max-width: 800px;
     }
+
 
     /* ----- visit us page ----- */
 
@@ -486,9 +501,31 @@ textarea:focus {
         grid-column: 1 / 4;
     }
 
+    /* ----- events page ----- */
+
+    .section-two, .energetica, .section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .more-events {
+        text-align: center;
+    }
+
+    img.arrow {
+        max-width: 300px;
+    }
+
+    .events-h {
+        width: 800px;
+    }
+
+    .event-schedule-two, .schedule-section {
+        width: 800px;
+    }
 
 }
-
 
 /* laptops and desktop */
 
@@ -714,4 +751,47 @@ textarea:focus {
         background: no-repeat url(/images/squares-4.png);
         background-size: 100% auto;
     }
+
+    /* ---- events page ----- */
+
+    .img-squares {
+        height: 500px;
+        grid-column: 1 / 2;
+        margin-top: 30px;
+    }
+
+    .night-museum, .event-schedule-two {
+        margin-top: 50px;
+    }
+
+    .events-h {
+        grid-column: 2 / 3;
+    }
+    
+    .h1-get-involved {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    img.arrow {
+        max-width: 300px;
+    }
+
+    .section.events, .section-two.events {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        align-items: start;
+    }
+
+    .section.events {
+        margin-top: 100px;
+    }
+
+    .energetica {
+        margin: 10%;
+    }
+
+    .more-events {
+        text-align: center;
+    }
+
 }
