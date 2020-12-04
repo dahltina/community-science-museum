@@ -615,15 +615,6 @@ textarea:focus {
         font-size: 18px;
     }
 
-    nav li:hover {
-        color: var(--red);
-    }
-
-    .btn-main:hover, .btn:hover {
-        background-color: var(--white);
-        color: var(--red);
-    }
-
     /* footer */
 
     .footer-line {
@@ -638,6 +629,27 @@ textarea:focus {
 
     .footer-newsletter {
         grid-area: 1 / 5 / 2 / 7;
+    }
+
+    /* hover and transitions */
+
+    nav li:hover {
+        color: var(--red);
+    }
+
+    .btn-main:hover, .btn:hover {
+        background-color: var(--white);
+        color: var(--red);
+    }
+
+    .image, .cta-box {
+        position: relative;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .image:hover, .cta-box:hover {
+        transform: translate(10px, -10px);
+        box-shadow: -10px 10px 0 0 rgba(0, 0, 0, 1);
     }
 
     /* ----- exhibitions & get involved pages ----- */
@@ -767,10 +779,6 @@ textarea:focus {
     .events-h {
         grid-column: 2 / 3;
     }
-    
-    .h1-get-involved {
-        grid-area: 1 / 1 / 2 / 3;
-    }
 
     img.arrow {
         max-width: 300px;
@@ -792,6 +800,11 @@ textarea:focus {
 
     .more-events {
         text-align: center;
+    }
+
+    .img-squares-two {
+        background: no-repeat url(/images/squares-events-2.svg);
+        background-size: 100% auto;
     }
 
 }
