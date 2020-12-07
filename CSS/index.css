@@ -166,17 +166,38 @@ a.btn-main, .btn {
 /* ----- main content ----- */
 
 .cta-box {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
     background: no-repeat url(/images/squares-1.png);
     background-size: contain;
-    max-width: 378px; 
-    height: 378px;
+    width: 100%;
+    height: 0;
+    padding-top: 99.5%;
+    /* background-size: 100% auto; */
+    /* max-width: 378px; 
+    height: 378px;  */
     margin: 10px auto;
-    resize: both;
     text-align: center;
-    margin-top: 5%;
+}
+
+.h3-main, .h4-main {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto; 
+    font-size: 22px; 
+}
+
+.black {
+    color: var(--black);
+}
+
+.h4-main {
+    top: 70%;
+    font-size: 18px;
 }
 
 .two {
@@ -186,7 +207,14 @@ a.btn-main, .btn {
 
 .three {
     background: no-repeat url(/images/exhibitions-illustration.png);
-    background-size: 100% auto;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 99.5%;
+    /* background-size: 100% auto;
+    width: 100%;
+    max-width: 750px; 
+    height: 750px; */
 }
 
 .four {
@@ -426,7 +454,7 @@ textarea:focus {
     .four {grid-area: 2 / 3 / 3 / 4;}
 
     .exhibitions-box {
-        grid-column: 1 / 4;
+        grid-area: 2 / 1 / 4 / 3;
         max-width: 800px;
     }
 
