@@ -9,7 +9,7 @@
     --white: #fff;
     --black: #000;
     --grey: #585048;
-    --red: #f22e76;
+    --red: #DE0055;
     --purple: #6301f7;
     --blueish:  #48f5e8;
     --yellow: #ffee3f;
@@ -161,43 +161,20 @@ a.btn-main, .btn {
     background-color: var(--red);
     font-size: 1rem;
     padding: 0.6rem 4rem;
+    -webkit-appearance: none;
 }
 
 /* ----- main content ----- */
 
 .cta-box {
-    /* display: flex;
-    justify-content: center; */
     position: relative;
     background: no-repeat url(/images/squares-1.png);
     background-size: contain;
     width: 100%;
     height: 0;
     padding-top: 99.5%;
-    /* background-size: 100% auto; */
-    /* max-width: 378px; 
-    height: 378px;  */
     margin: 10px auto;
     text-align: center;
-}
-
-.h3-main, .h4-main {
-    position: absolute;
-    top: 0;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto; 
-    font-size: 22px; 
-}
-
-.black {
-    color: var(--black);
-}
-
-.h4-main {
-    top: 70%;
-    font-size: 18px;
 }
 
 .two {
@@ -210,11 +187,7 @@ a.btn-main, .btn {
     background-size: contain;
     width: 100%;
     height: 0;
-    padding-top: 99.5%;
-    /* background-size: 100% auto;
-    width: 100%;
-    max-width: 750px; 
-    height: 750px; */
+    padding-top: 99.5%; 
 }
 
 .four {
@@ -235,6 +208,27 @@ a.btn-main, .btn {
     background: no-repeat url(/images/biology.jpg);
     background-size: 100% auto;
 }
+
+.h3-main, .h4-main {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto; 
+    font-size: 22px; 
+}
+
+.h4-main {
+    top: 70%;
+    font-size: 18px;
+}
+
+.black {
+    color: var(--black);
+}
+
+
 
 /* ---- footer ----- */
 
@@ -423,6 +417,8 @@ textarea:focus {
   border: none;
 }
 
+
+
 /* tablets */
 
 @media (min-width: 600px) and (max-width: 1100px) {
@@ -451,10 +447,9 @@ textarea:focus {
     }
 
     .one {grid-column: 1 / 4;}
-    .four {grid-area: 2 / 3 / 3 / 4;}
 
     .exhibitions-box {
-        grid-area: 2 / 1 / 4 / 3;
+        grid-area: 2 / 1 / 5 / 4;
         max-width: 800px;
     }
 
