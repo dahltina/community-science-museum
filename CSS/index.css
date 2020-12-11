@@ -217,6 +217,7 @@ a.btn-main, .btn {
     margin-left:auto;
     margin-right:auto; 
     font-size: 22px; 
+    padding-bottom: 80%;
 }
 
 .h4-main {
