@@ -229,8 +229,6 @@ a.btn-main, .btn {
     color: var(--black);
 }
 
-
-
 /* ---- footer ----- */
 
 .footer-line {
@@ -290,7 +288,11 @@ input[type="submit"] {
     margin-top: 10px;
 }
 
-/* ----- visit us page ----- */
+/* ----- visit us & grand opening page ----- */
+
+.img-squares {
+    display: none;
+}
 
 .header-visit {
     top: 0px;
@@ -391,9 +393,6 @@ input[type="submit"] {
 
 .boxes-one {
     display: none;
-    background: no-repeat url(/images/space-illustration-1.svg);
-    width: 100%;
-    height: 250px;
 }
 
 /* ----- contact page ----- */
@@ -466,7 +465,6 @@ textarea:focus {
     .main-events img {
         max-width: 800px;
     }
-
 
     /* ----- visit us page ----- */
 
@@ -678,14 +676,20 @@ textarea:focus {
 
     /* ----- exhibitions & get involved pages ----- */
 
+    .boxes-one {
+        display: inherit;
+        grid-area: 1 / 2 / 2 / 3;
+        background: no-repeat url(/images/space-illustration-1.svg);
+        width: 100%;
+        height: 250px;
+    }
+
     .h1-get-involved {
         padding: 40px 0px 0px 10%;
+        justify-self: left;
     }
     .main-events {
         margin: 0;
-    }
-
-    .boxes-one {
     }
 
     .section, .section-two {
@@ -784,6 +788,7 @@ textarea:focus {
     }
 
     .img-squares {
+        display: inherit;
         background: no-repeat url(/images/squares-4.png);
         background-size: 100% auto;
     }
