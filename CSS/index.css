@@ -335,7 +335,7 @@ input[type="submit"] {
 
 .img-squares {
     display: inherit;
-    background: no-repeat url(/images/squares-4.png);
+    background: repeat url(/images/squares-4.png);
     background-size: contain;
     width: 100%;
     max-width: 800px;
@@ -781,6 +781,7 @@ textarea:focus {
         height: 270px;
         grid-column: 1 / 2;
         margin-top: 30px;
+        background-repeat: no-repeat;
     }
 
     .night-museum, .event-schedule-two {
