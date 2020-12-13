@@ -113,7 +113,7 @@ header {
 }
 
 .header-line {
-    background: no-repeat url(/images/header-line.jpg);
+    background: url(/images/header-line.jpg);
     width: 100%;
     height: 8px;
     z-index: 9;
@@ -161,7 +161,6 @@ a.btn-main, .btn {
     background-color: var(--red);
     font-size: 1rem;
     padding: 0.6rem 4rem;
-    -webkit-appearance: none;
 }
 
 /* ----- main content ----- */
@@ -434,7 +433,7 @@ textarea:focus {
 
     .exhibitions-box {
         grid-area: 2 / 1 / 5 / 4;
-        max-width: 800px;
+        width: 600px;
     }
 
     /* ----- footer ----- */
@@ -605,25 +604,12 @@ textarea:focus {
     }
 
     /* typography */
-    h1 {
-        font-size: 57px;
-    }
 
-    .h1-pink {
-        font-size: 57px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    .h2-main.header  {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 18px;
-    }
+    h1 {font-size: 57px;}
+    .h1-pink {font-size: 57px;}
+    h2 {font-size: 24px;}
+    .h2-main.header {font-size: 40px;}
+    p {font-size: 18px;}
 
     /* footer */
 
@@ -663,7 +649,6 @@ textarea:focus {
     }
 
     /* ----- exhibitions & get involved pages ----- */
-
 
     .h1-get-involved {
         padding: 40px 0px 0px 10%;
