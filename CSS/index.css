@@ -290,7 +290,7 @@ input[type="submit"] {
 
 /* ----- visit us & grand opening page ----- */
 
-.img-squares {
+.img-squares-opening {
     display: none;
 }
 
@@ -334,7 +334,8 @@ input[type="submit"] {
 /* ----- events page ----- */
 
 .img-squares {
-    background: url(/images/squares-4.png);
+    display: inherit;
+    background: no-repeat url(/images/squares-4.png);
     background-size: contain;
     width: 100%;
     max-width: 800px;
@@ -372,27 +373,10 @@ input[type="submit"] {
     background-color: var(--yellow);
 }
 
-/*
-.box {
-    background: no-repeat url(/images/space-illustration-7.svg);
-    width: 100%;
-    height: 115px;
-    position: absolute;
-}
-
-.box.two {
-    background: no-repeat url(/images/space-illustration-6.svg);
-}
-*/
-
 .boxes {
     background: no-repeat url(/images/space-illustration-5.svg);
     width: 100%;
     height: 150px;
-}
-
-.boxes-one {
-    display: none;
 }
 
 /* ----- contact page ----- */
@@ -521,6 +505,10 @@ textarea:focus {
 
     .schedule {
         grid-column: 1 / 4;
+    }
+
+    .img-squares-opening {
+        display: none;
     }
 
     /* ----- events page ----- */
@@ -676,18 +664,12 @@ textarea:focus {
 
     /* ----- exhibitions & get involved pages ----- */
 
-    .boxes-one {
-        display: inherit;
-        grid-area: 1 / 2 / 2 / 3;
-        background: no-repeat url(/images/space-illustration-1.svg);
-        width: 100%;
-        height: 250px;
-    }
 
     .h1-get-involved {
         padding: 40px 0px 0px 10%;
-        justify-self: left;
+        grid-area: 1 / 1 / 2 / 3;
     }
+
     .main-events {
         margin: 0;
     }
@@ -787,7 +769,7 @@ textarea:focus {
         font-size: 16px;
     }
 
-    .img-squares {
+    .img-squares-opening {
         display: inherit;
         background: no-repeat url(/images/squares-4.png);
         background-size: 100% auto;
@@ -796,7 +778,7 @@ textarea:focus {
     /* ---- events page ----- */
 
     .img-squares {
-        height: 500px;
+        height: 270px;
         grid-column: 1 / 2;
         margin-top: 30px;
     }
