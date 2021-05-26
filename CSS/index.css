@@ -186,7 +186,7 @@ a.btn-main, .btn {
     background-size: contain;
     width: 100%;
     height: 0;
-    padding-top: 99.5%; 
+    padding-top: 99.5%;
 }
 
 .four {
@@ -214,14 +214,14 @@ a.btn-main, .btn {
     left:0;
     right:0;
     margin-left:auto;
-    margin-right:auto; 
-    font-size: 22px; 
+    margin-right:auto;
+    font-size: 22px;
     padding-bottom: 80%;
 }
 
 .h4-main {
     top: 70%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .black {
@@ -381,18 +381,26 @@ input[type="submit"] {
 /* ----- contact page ----- */
 
 .main.contact {
+    margin: auto;
     text-align: left;
+    max-width: 800px;
+    padding: 0px 20px 100px 20px;
 }
 
 form label {
     color: var(--gray);
     font-size: 0.8rem;
-  }
+}
+
+form input,
+textarea {
+    border: 1px solid black;
+}
 
 textarea {
     width: 100%;
     min-height: 200px;
-  }
+}
 
 input:focus,
 textarea:focus {
@@ -527,7 +535,7 @@ textarea:focus {
     }
 
     .events-h {
-        width: 800px;
+        max-width: 800px;
     }
 
     .event-schedule-two, .schedule-section {
@@ -647,6 +655,11 @@ textarea:focus {
         transform: translate(10px, -10px);
         box-shadow: -10px 10px 0 0 rgba(0, 0, 0, 1);
     }
+
+    nav li:hover, .image:hover, .cta-box:hover {
+        transition: 0.2s all ease-in;
+    }
+
 
     /* ----- exhibitions & get involved pages ----- */
 
