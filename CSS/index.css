@@ -147,7 +147,11 @@ nav, #hamburger  {
 a {
     text-decoration: none;
     color: inherit;
-  }
+}
+
+.active {
+    color: var(--red);
+}
 
 /* ----- images and buttons ----- */
 
@@ -607,10 +611,6 @@ textarea:focus {
         display: none;
     }
 
-    .active {
-        color: var(--red);
-    }
-
     /* typography */
 
     h1 {font-size: 57px;}
@@ -656,7 +656,8 @@ textarea:focus {
         box-shadow: -10px 10px 0 0 rgba(0, 0, 0, 1);
     }
 
-    nav li:hover, .image:hover, .cta-box:hover {
+    nav li:hover, .image:hover, .cta-box:hover,
+    .btn:hover, .btn-main:hover {
         transition: 0.2s all ease-in;
     }
 
