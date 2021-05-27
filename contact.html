@@ -32,22 +32,26 @@
             <!------- main ------->
             <div class="main contact">
                 <h1 class="h1-contact">get in touch</h1>
-                <form action="form-success.php" method="GET">
+                <form action="form-success.php" method="GET" id="form">
                     <div class="first-name">
                       <label for="first-name">First name </label>
-                      <input type="text" name="first-name" id="first-name" required />
+                      <input type="text" name="first-name" id="first-name"/>
+                      <div class="formError" id="firstNameError">Please provide a first name of at least 1 character</div>
                     </div>
                     <div class="last-name">
                       <label for="last-name">Last name </label>
-                      <input type="text" name="last-name" id="last-name" required />
+                      <input type="text" name="last-name" id="last-name"/>
+                      <div class="formError" id="lastNameError">Please provide a last name of at least 2 characters</div>
                     </div>
                     <div class="e-mail">
                       <label for="name">E-mail </label>
-                      <input type="text" name="e-mail" id="e-mail" required />
+                      <input type="text" name="e-mail" id="e-mail"/>
+                      <div class="formError" id="emailError">Please provide a valid email</div>
                     </div>
                     <div class="textarea">
                       <label for="textarea">Message </label>
-                      <textarea name="message"></textarea>
+                      <textarea name="message" id="message"></textarea>
+                      <div class="formError" id="messageError">Your message must be at least 20 characters long</div>
                     </div>
                     <input id="submit" type="submit" value="SEND" />
                   </form>
@@ -99,5 +103,6 @@
                 </form>
             </div>
         </footer>
+        <script src="scripts/form.js"></script>
     </body>
 </html>
